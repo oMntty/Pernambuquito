@@ -1,10 +1,13 @@
+/* Reseta o margin/padding padrão */
 body {
     font-family: sans-serif;
     margin: 0;
+    background-color: #2F2D2E; /* Cor de fundo */
 }
 
+/* Estilos da Navbar */
 .nav-container {
-    background-color: #222;
+    background-color: #2F2D2E;
     color: white;
     padding: 1rem 2rem;
     text-align: right;
@@ -26,55 +29,140 @@ body {
     margin: 0 1rem;
 }
 
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção Hero */
 .hero {
-    background-color: #222;
+    background-color: #2F2D2E;
     color: white;
     padding: 5rem 2rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem; /* Compensa o espaço da navbar fixa */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
-    overflow: hidden; 
-    margin-top: 4rem; /* Adicionei essa linha para compensar o espaço da aba de navegação */
 }
 
-.hero .container { 
-    z-index: 1; 
-    position: relative; 
-}
-
-.hero::before {
-    content: '';
-    background-color: #ffc107;
-    height: 100%;
-    width: 200%; 
-    position: absolute;
-    bottom: 0;
-    left: -50%; 
-    transform: rotate(-10deg); 
-    z-index: 0; 
+/* Texto e Botão na Esquerda */
+.text-section {
+    max-width: 50%;
 }
 
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
 }
 
-.btn {
-    background-color: #dc3545;
+.btn-action {
+    background-color: #F14A41; /* Cor F14A41 */
     color: white;
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
 }
 
-.btn:hover {
-    background-color: #c82333; 
+.btn-action:hover {
+    background-color: #d13931; /* Um tom mais escuro de vermelho */
     cursor: pointer;
 }
 
-.hero img {
+/* Imagem do Hambúrguer */
+.image-section img {
+    max-width: 400px;
+    height: auto;
+}
+
+/* Seção do Cardápio */
+.menu {
+    background-color: #f0f0f0;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.menu .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.item img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 2rem auto 0; 
+    margin: 0 auto 1rem;
+}
+
+.item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.item p {
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* Adicionando logo à navbar */
+.logo-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo {
+    height: 40px; /* Ajuste o tamanho da logo */
+    width: auto;  /* Mantém a proporção */
+    margin-right: 1rem; /* Espaçamento à direita da logo */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between; /* Coloca a logo à esquerda e os links à direita */
+    align-items: center; /* Centraliza verticalmente a logo e os links */
+    background-color: #2F2D2E;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
