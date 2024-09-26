@@ -10,21 +10,58 @@
 
     <header>
         <nav class="nav-container">
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo da Hamburgueria" class="logo">
+            </div>
             <ul class="nav-links">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Cardápio</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#menu">Cardápio</a></li>
                 <li><a href="#">Entrega</a></li>
                 <li><a href="#">Restaurantes</a></li>
             </ul>
         </nav>
     </header>
+    
 
+    <!-- Seção de Landing Page -->
     <section class="hero">
-        <div class="container"> 
-            <h1>A melhor <br> hamburgueria</h1>
-            <a href="#" class="btn">Peça agora</a>
-            <img src="hamburguer.png" alt="Hamburguer">
+        <div class="container">
+            <div class="text-section">
+                <h1>A melhor <br> hamburgueria</h1>
+                <a href="#menu" class="btn-action">Peça agora</a>
+            </div>
+            <div class="image-section">
+                <img src="hamburguer.png" alt="Hamburguer" />
+            </div>
         </div>
     </section>
+
+    <!-- Seção de Cardápio -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2>Explora o cardápio</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="hamburguer1.png" alt="Hamburguer 1">
+                    <h3>Burguer 1</h3>
+                    <p>Descrição do hamburguer 1, ingredientes e informações adicionais.</p>
+                    <p class="price">R$ 29,90</p>
+                </div>
+                <div class="item">
+                    <img src="hamburguer2.png" alt="Hamburguer 2">
+                    <h3>Burguer 2</h3>
+                    <p>Descrição do hamburguer 2, ingredientes e informações adicionais.</p>
+                    <p class="price">R$ 29,90</p>
+                </div>
+                <div class="item">
+                    <img src="hamburguer3.png" alt="Hamburguer 3">
+                    <h3>Burguer 3</h3>
+                    <p>Descrição do hamburguer 3, ingredientes e informações adicionais.</p>
+                    <p class="price">R$ 29,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
